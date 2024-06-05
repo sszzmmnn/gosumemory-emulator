@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="status">
+            <p>Gosumemory WebSocket: <span id="gmws-connect" class="span-off">Not connected</span></p>
+            <p>This app's WebSocket: <span id="taws-start" class="span-off">Not running</span></p>
+        </div>
+        <div class="buttons">
+            <button id="gmws-connect-btn" class="off">Connect to gosumemory</button>
+            <button id="gmws-save-btn" class="off" disabled>Collect gosumemory's data</button>
+        </div>
+        <div class="buttons">
+            <button id="taws-start-btn" class="off">Open WebSocket Server</button>
+            <div class="start-reset">
+                <button id="taws-send-btn" class="off" disabled>Start sending data</button>
+                <button id="taws-reset-index-btn">Reset Sending Index</button>
+            </div>
+        </div>
+    </div>
+    <script src="./renderer.js"></script>
+</body>
+</html>

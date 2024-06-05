@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 12px;
+
+    color: #213547;
+    background-color: #ebf0f5;
+}
+
+body, html {
+    height: calc(100% - 1rem);
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #c9deff;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dce8f5;
+    margin: 1rem;
+    height: 100%;
+    border: #c4dcf5aa 3px solid;
+    border-radius: 8px;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 16px;
+}
+
+.buttons {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.buttons button {
+    margin: 0.5rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.off {
+    background-color: red;
+    color: #eeeeee;
+    transition: background-color 0.25s;
+}
+
+.span-off {
+    color: red;
+    transition: color 0.25s;
+}
+
+.wait {
+    background-color: darkorange;
+    transition: background-color 0.25s;
+}
+
+.span-wait {
+    color: darkorange;
+    transition: color 0.25s;
+}
+
+.on {
+    background-color: limegreen;
+    transition: background-color 0.25s;
+}
+
+.span-on {
+    color: limegreen;
+    transition: color 0.25s;
+}
